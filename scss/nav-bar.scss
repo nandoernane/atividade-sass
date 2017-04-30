@@ -1,0 +1,17 @@
+%brand{
+	.brand{
+		font-family: 'Baloo', cursive;
+		font-weight: bold;
+		font-size: 30px;
+		display: inline-block;
+		margin-left: 20px;
+		margin-right: 80px; 
+	}
+}
+.nav-bar{	
+	width: 520px;
+	height: 80px;	
+	@extend %brand;
+	@include tema($background, $color, $border);
+	@include link($background-link, $color-link);
+}
